@@ -44,6 +44,7 @@ form button{
  color: white;
  transition: 0.3s;
  border: 1px solid white;
+ border-radius: 10px;
 }
 form button:hover{
  background-color: white;
@@ -61,8 +62,13 @@ form button:hover{
  color: #B5B5B5;
 }
 input::placeholder{
- padding: 0 20px;
+
  color: #B5B5B5;
+}
+.form-control:focus{
+ border-color:var(--primary-color) !important;
+ box-shadow: 0 0 0 0.10rem var(--primary-color);
+
 }
 
 @media (max-width : 715px) {
